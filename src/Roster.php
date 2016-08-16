@@ -11,7 +11,6 @@ class Roster {
     private $buses = [];
     private $lines = [];
     private $stops = [];
-    private $routes = [];
 
     /**
     * Adds a new bus line to this roster.

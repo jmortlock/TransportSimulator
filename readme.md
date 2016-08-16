@@ -1,5 +1,22 @@
 [![Build Status](https://travis-ci.org/jmortlock/TransportSimulator.svg?branch=master)](https://travis-ci.org/jmortlock/TransportSimulator)
 
+# Notes
+* This code is composed of the API and an example driver.
+* example.php contains the API driver code.
+* src/ folder contains the API.
+* There is light test code coverage which is run via GitHubs TravisCI integration.
+* Code is runnable with a working PHP system (as outlined below)
+
+# Requirements
+ * PHP 5.6+
+ * composer
+ * phpunit
+
+# Installation
+Following steps
+* composer install
+* php example.php or phpunit
+
 # Problem
 
 ## Description
