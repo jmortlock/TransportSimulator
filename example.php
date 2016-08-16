@@ -38,7 +38,7 @@ $line = $roster->addLine(100);
 
 $city_to_bay_route = $line->addRoute(new Route("City to Bay"));
 
-//next add a series of stops, first we get the create stop record
+//next add a series of stops, first we get the created stop record
 //from the roster (we want the meta-data).
 //than define a number of minutes it will take to reach that stop from the
 //previous stop.
@@ -57,7 +57,7 @@ $bay_to_city_route->addStop($roster->getStop("R-4"), 15);
 $bay_to_city_route->addStop($roster->getStop("R-5"), 2);
 $bay_to_city_route->addStop($roster->getStop("R-6"), 2);
 
-//Lets create a bus object.
+//Lets create a couple of bus object.
 //and give them a named identifier.
 $morning_bus = $roster->addBus("berty");
 $afternoon_bus = $roster->addBus("betty");
@@ -70,3 +70,5 @@ $roster->scheduleBus($afternoon_bus, $line, new DateTime("2016-07-16 16:30:00"))
 
 //lets do a printout of the current roster.
 $roster->render();
+
+//Example ends.
