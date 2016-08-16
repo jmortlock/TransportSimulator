@@ -9,6 +9,10 @@ class Line {
         $this->identifier = $identifier;
     }
 
+    function getIdentifier() {
+        return $this->identifier;
+    }
+
     function addRoute(Route $route) {
         $this->routes[] = $route;
         return $route;
@@ -27,15 +31,5 @@ class Line {
         return null;
     }
 
-    function getRouteStop($route, $stop) {
-        $route = $this->getRoute($route);
-        if ($route != null) {
-            return $route->getStop($stop);
-        }
-        return null;
-    }
 
-    function getIdentifier() {
-        return $this->identifier;
-    }
 }

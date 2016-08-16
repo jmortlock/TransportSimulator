@@ -13,23 +13,17 @@ class Route {
         return $this->name;
     }
 
-    function addStop($stopCode) {
-        $stop = new Stop($stopCode);
-        $stop->setRouteName($this->getName());
+    function addStop(Stop $stop, $expectedTravelTime) {
+        $stop = new RouteStop($this, $stop, $expectedTravelTime);
         $this->stops[] = $stop;
         return $stop;
     }
 
-    function getStop($code) {
-        foreach ($this->stops as $stop) {
-            if ($stop->getCode() == $code) {
-                return $stop;
-            }
-        }
-        return null;
-    }
-
     function getStops() {
         return $this->stops;
+    }
+
+    function toString() {
+      return $this->name;
     }
 }
