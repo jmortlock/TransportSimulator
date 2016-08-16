@@ -1,0 +1,21 @@
+{
+    "name": "mortlock/TransportSimulator",
+    "description": "Transport Simulator",
+    "license": "",
+    "keywords": ["routes", "buses", "schedules"],
+    "authors": [
+        {
+            "name": "John Mortlock",
+            "email": "john.mortlock@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TransportSimulator\\": "src"
+        }
+    }
+}
