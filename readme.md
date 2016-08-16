@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jmortlock/TransportSimulator.svg?branch=master)](https://travis-ci.org/jmortlock/TransportSimulator)
+
 # Problem
 
 ## Description
