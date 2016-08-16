@@ -4,6 +4,7 @@
 * This code is composed of the API and an example driver.
 * example.php contains the API driver code.
 * src/ folder contains the API.
+* Basic tests are included to cover just the functional requirements.
 * There is light test code coverage which is run via GitHubs TravisCI integration.
 * Code is runnable with a working PHP system (as outlined below)
 

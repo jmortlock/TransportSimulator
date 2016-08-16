@@ -69,6 +69,14 @@ class SystemTest extends PHPUnit_Framework_TestCase {
   }
 
   public function testScheduleBus() {
+    $roster = new Roster();
+    $line = $roster->addLine(1);
+    $line->addRoute(new Route("forward"));
+    $line->addRoute(new Route("backward"));
+    $bus = $roster->addBus("Bus1");
+
+    $roster->scheduleBus($bus, $line, new \DateTime("2016-01-01 01:00:00"));
+    $this->assertEquals(1, count($roster->getSchedules()));
 
   }
 

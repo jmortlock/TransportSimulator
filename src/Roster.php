@@ -102,6 +102,14 @@ class Roster {
     }
 
     /**
+    * Return the current schedules.
+    * @return array Current schedule.
+    */
+    function getSchedules() {
+      return $this->schedules;
+    }
+
+    /**
     * Print to scren the current roster schedule.
     */
     function render() {
