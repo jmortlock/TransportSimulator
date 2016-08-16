@@ -69,4 +69,4 @@ $roster->scheduleBus($morning_bus, $line, new DateTime("2016-07-16 08:00:00"));
 $roster->scheduleBus($afternoon_bus, $line, new DateTime("2016-07-16 16:30:00"));
 
 //lets do a printout of the current roster.
-$roster->print();
+$roster->render();

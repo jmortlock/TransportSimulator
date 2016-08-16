@@ -104,7 +104,7 @@ class Roster {
     /**
     * Print to scren the current roster schedule.
     */
-    function print() {
+    function render() {
       foreach ($this->schedules as $schedule) {
         print $schedule->toString() . PHP_EOL;
         $this->printRoutes($schedule->getLine());
