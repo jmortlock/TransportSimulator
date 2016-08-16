@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/jmortlock/TransportSimulator.svg?branch=master)](https://travis-ci.org/jmortlock/TransportSimulator)
 
 # Notes
-* This code is composed of the API and an example driver.
+* This code is composed of the API, example driver and unit tests.
 * example.php contains the API driver code.
 * src/ folder contains the API.
 * Basic tests are included to cover just the functional requirements.
