@@ -2,7 +2,8 @@
 namespace TransportSimulator;
 
 class Stop {
-    var $code;
+    private $code;
+    private $routeName;
 
     function __construct($code) {
         $this->code = $code;
@@ -10,5 +11,13 @@ class Stop {
 
     function getCode() {
         return $this->code;
+    }
+
+    function getRouteName() {
+        return $this->routeName;
+    }
+
+    function setRouteName($value) {
+        $this->routeName = $value;
     }
 }
